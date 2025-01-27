@@ -9,8 +9,7 @@ def load_data():
     # Load the data from your Excel file (ensure to change the file path if necessary)
     df = pd.read_excel('起訴書例子_竊盜_100.xlsx')
     return df
-my_api_key = 'AIzaSyDN8xZLxZelO5SsjP6ZSGPwWraPzxSIa-c'
-genai.configure(api_key=my_api_key)
+
 
 def two_prompt(query):
     prompt = f"""
